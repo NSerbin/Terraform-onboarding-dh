@@ -1,0 +1,19 @@
+{
+      "Version" :"2012-10-17",
+      "Id":"obn-devops-nserbin-sbx-bucket",
+      "Statement" : [
+        {
+             "Sid": "obn-devops-nserbin-sbx-bucket",
+             "Action": [
+                  "s3:PutObject",
+                  "s3:GetObject",
+                  "s3:DeleteObject"
+              ],
+              "Effect" :"Allow",
+              "Principal": "*",
+              "Resource": [
+                  "arn:aws:s3:::${bucket_name}/*"
+                    ]
+                  }       
+      ]
+}

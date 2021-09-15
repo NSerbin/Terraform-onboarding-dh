@@ -1,0 +1,15 @@
+{
+      "Version" :"2012-10-17",
+      "Id":"obn-devops-nserbin-sbx",
+      "Statement" : [
+        {
+             "Sid": "obn-devops-nserbin-sbx",
+              "Action": "s3:*",
+              "Effect" :"Allow",
+              "Resource": [
+                  "arn:aws:s3:::${bucket_name}/*"
+                    ],
+              "Principal": "*"
+        }
+      ]
+}
