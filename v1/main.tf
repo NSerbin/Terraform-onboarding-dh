@@ -1,10 +1,10 @@
-resource "aws_instance" "onboarding-terrav1" {
+resource "aws_instance" "onboarding_terra_v1" {
   ami           = "ami-087c17d1fe0178315"
-  subnet_id   = "subnet-d220fab4"
-  instance_type = "t2.micro"
-  key_name               = "onboarding-nserbin-terra"
+  subnet_id     = "subnet-d220fab4"
+  instance_type = "t3.micro"
+  key_name      = "onboarding-nserbin-terra"
   tags = {
-    Name = "onboarding-terrav1"
+    Name  = "onboarding-terrav1"
     Owner = "Nserbin"
   }
 }
@@ -32,7 +32,7 @@ resource "aws_security_group" "allow_ssh" {
 
 
   tags = {
-    Name = "onboarding-terrav1"
+    Name  = "onboarding-terrav1"
     Owner = "Nserbin"
   }
 }

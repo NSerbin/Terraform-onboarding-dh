@@ -76,9 +76,9 @@ resource "aws_security_group" "obn_devops_nserbin_sbx_rds_sg" {
   vpc_id      = var.rds_sg["vpc_id"]
 
   ingress {
-    protocol    = "tcp"
-    from_port   = 3306
-    to_port     = 3306
+    protocol        = "tcp"
+    from_port       = 3306
+    to_port         = 3306
     security_groups = ["aws_security_group.obn_devops_nserbin_sbx_ec2_sg.id"]
   }
 

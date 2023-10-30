@@ -93,8 +93,8 @@ tags = {
   namespace = "dh"
   vertical  = "gbl"
   delimiter = "-"
-  squad = "devops"
-  id = "onboarding"
+  squad     = "devops"
+  id        = "onboarding"
 }
 
 label = {
@@ -105,5 +105,5 @@ label = {
   stage       = "sbx"
   environment = "nserbin"
   delimiter   = "-"
-  attributes = "private"
+  attributes  = "private"
 }
